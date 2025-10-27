@@ -9,9 +9,17 @@ import SwiftUI
 
 @main
 struct BrowserByItsukiApp: App {
+    @State private var browserManager: BrowserManager = BrowserManager()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(self.browserManager)
+                .onOpenURL(perform: { url in
+                    withAnimation {
+                        self.browserManager.openNewTab(url)
+                    }
+                })
         }
     }
 }

@@ -8,12 +8,49 @@
 
 /* Begin PBXFileReference section */
 		98F106D62EAC48B80062314E /* BrowserByItsuki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrowserByItsuki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98F108D72EAF13950062314E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		98F108D92EAF13C10062314E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		98F108DB2EAF13C90062314E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		98F106E72EAC48E60062314E /* Exceptions for "BrowserByItsuki" folder in "BrowserByItsuki" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 98F106D52EAC48B80062314E /* BrowserByItsuki */;
+		};
+		98F108EA2EAF1B020062314E /* Exceptions for "DocumentAssets" folder in "BrowserByItsuki" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				bookmark.png,
+				history.png,
+				icon.png,
+				overall.gif,
+				readingList.png,
+				search.png,
+				startPage.png,
+			);
+			target = 98F106D52EAC48B80062314E /* BrowserByItsuki */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		98F106D82EAC48B80062314E /* BrowserByItsuki */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				98F106E72EAC48E60062314E /* Exceptions for "BrowserByItsuki" folder in "BrowserByItsuki" target */,
+			);
 			path = BrowserByItsuki;
+			sourceTree = "<group>";
+		};
+		98F108D62EAF13720062314E /* DocumentAssets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				98F108EA2EAF1B020062314E /* Exceptions for "DocumentAssets" folder in "BrowserByItsuki" target */,
+			);
+			path = DocumentAssets;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,6 +69,10 @@
 		98F106CD2EAC48B80062314E = {
 			isa = PBXGroup;
 			children = (
+				98F108DB2EAF13C90062314E /* .gitignore */,
+				98F108D92EAF13C10062314E /* LICENSE */,
+				98F108D72EAF13950062314E /* README.md */,
+				98F108D62EAF13720062314E /* DocumentAssets */,
 				98F106D82EAC48B80062314E /* BrowserByItsuki */,
 				98F106D72EAC48B80062314E /* Products */,
 			);
@@ -62,6 +103,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				98F106D82EAC48B80062314E /* BrowserByItsuki */,
+				98F108D62EAF13720062314E /* DocumentAssets */,
 			);
 			name = BrowserByItsuki;
 			packageProductDependencies = (
@@ -256,11 +298,15 @@
 				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrowserByItsuki/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This application needs to access your current location.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This application needs to access your photo library for saving images or videos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -288,11 +334,15 @@
 				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BrowserByItsuki/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This application needs to access your current location.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "This application needs to access your photo library for saving images or videos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
