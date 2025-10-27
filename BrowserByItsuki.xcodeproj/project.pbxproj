@@ -11,6 +11,7 @@
 		98F108D72EAF13950062314E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		98F108D92EAF13C10062314E /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		98F108DB2EAF13C90062314E /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		98F109512EAF5A480062314E /* privacy.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -69,6 +70,7 @@
 		98F106CD2EAC48B80062314E = {
 			isa = PBXGroup;
 			children = (
+				98F109512EAF5A480062314E /* privacy.html */,
 				98F108DB2EAF13C90062314E /* .gitignore */,
 				98F108D92EAF13C10062314E /* LICENSE */,
 				98F108D72EAF13950062314E /* README.md */,
