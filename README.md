@@ -10,6 +10,7 @@ A simple browser for iOS with the following functionalities.
 - Browse histories
 
 
+
 ## Permissions May Request
 
 | Category             | Permission                                                                                |
@@ -36,3 +37,13 @@ A simple browser for iOS with the following functionalities.
   <img src="./DocumentAssets/startPage.png" alt="bookmark" width="150px" style="padding:4px"/>
   <img src="./DocumentAssets/search.png" alt="bookmark" width="150px" style="padding:4px"/>
 </div>
+
+
+## License
+
+[License](./LICENSE)
+
+
+## Privacy Policy
+
+[Privacy Policy](./privacy.html)
