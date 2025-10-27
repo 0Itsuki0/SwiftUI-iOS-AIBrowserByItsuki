@@ -14,18 +14,12 @@ struct TabThumbnailView: View {
     var tab: BrowserTab
     
     @State private var webPage = WebPage(configuration: .defaultConfiguration)
-    @State private var loaded: Bool = false
     
     var body: some View {
         VStack(spacing: 16) {
             Group {
-                if let url = tab.currentUrl {
+                if tab.currentUrl != nil {
                     WebView(webPage)
-                        .onAppear {
-                            guard !loaded || webPage.url != url else { return }
-                            webPage.load(url)
-                            self.loaded = true
-                        }
                         .overlay(content: {
                             Rectangle()
                                 .fill(Color.clear)
@@ -36,6 +30,15 @@ struct TabThumbnailView: View {
                     StartUpView()
                 }
             }
+            .onChange(of: tab.currentUrl, initial: true, {
+                guard let url = tab.currentUrl else {
+                    return
+                }
+                guard url != self.webPage.url else {
+                    return
+                }
+                webPage.load(url)
+            })
             .disabled(true)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .aspectRatio(0.75, contentMode: .fit)
