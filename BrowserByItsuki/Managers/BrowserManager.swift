@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import WebKit
 
 @Observable
 class BrowserManager {
     let suggestions: [String] = ["https://www.google.com", "https://www.apple.com"]
+        
+    private(set) var chatManager: ChatManager?
+    
     
     private(set) var tabs: [BrowserTab] = [] {
         didSet {
@@ -57,9 +61,39 @@ class BrowserManager {
     
     private let encoder: JSONEncoder = JSONEncoder()
     private let decoder: JSONDecoder = JSONDecoder()
+    
+    // for getting page HTML
+    private let webPage: WebPage = WebPage(configuration: .defaultConfiguration)
 
     init() {
+        let navigationTool: WebNavigationTool = .init(navigateTo: { url in
+            await self.navigateTo(url)
+        })
+        let searchTool: WebSearchTool = .init(search: { searchQuery in
+            guard let url = await URL.searchURL(searchQuery) else {
+                return "Fail to create URL for searching."
+            }
+            await self.navigateTo(url)
+            await self.addRecentSearch(searchQuery)
+            return nil
+        })
+        self.chatManager = ChatManager(navigationTool: navigationTool, searchTool: searchTool)
+        
         self.loadSavedUserDefaults()
+        
+        #if DEBUG
+        self.bookmarks = Bookmark.testData
+        self.tabs = BrowserTab.testData
+        self.readingItems = ReadingListItem.testData
+        #endif
+    }
+    
+    private func navigateTo(_ url: URL) {
+        if let tab = self.openedTab {
+            tab.currentUrl = url
+        } else {
+            self.openNewTab(url)
+        }
     }
     
     func addNavigationHistory(_ url: URL) {
@@ -177,5 +211,11 @@ extension BrowserManager {
             UserDefaultsKey.lastOpenedTab.setValue(value: nil)
         }
     }
-    
+}
+
+
+extension URL {
+    static func searchURL(_ query: String) -> URL? {
+        return URL(string: "https://www.google.com/search?q=\(query)", encodingInvalidCharacters: true)
+    }
 }

@@ -59,7 +59,6 @@ actor MetadataCacheManager {
     }
     
     private func loadMetadata(_ url: URL) async -> LPLinkMetadata? {
-        print(#function)
         let metadataProvider = LPMetadataProvider()
         return try? await metadataProvider.startFetchingMetadata(for: url)
     }

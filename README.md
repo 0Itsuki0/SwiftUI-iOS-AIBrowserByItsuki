@@ -1,13 +1,19 @@
-# <img src="./DocumentAssets/icon.png" alt="logo" width="30px" height="30px" /> SwiftUI/iOS: Simple Browser App
+# <img src="./DocumentAssets/icon.png" alt="logo" width="30px" height="30px" /> SwiftUI/iOS: AI Powered Browser App
 
 
-A simple browser for iOS with the following functionalities.
+### ⭐⭐ An AI (Apple Intelligence) powered browser for iOS/iPadOS with the following functionalities. ⭐⭐
 
-- Search by keyword or direct URL entry
-- Reload or cancel loading a page
-- Add a page as Bookmark or Reading List
-- Share a page
-- Browse histories
+- Chat With AI
+    - Answer questions
+    - Navigate to specific Pages
+    - Search based on request
+
+- Basic Browsing
+    - Search by keyword or direct URL entry
+    - Reload or cancel loading a page
+    - Add a page as Bookmark or Reading List
+    - Share a page
+    - Browse histories
 
 
 
@@ -21,8 +27,11 @@ A simple browser for iOS with the following functionalities.
 
 ## Demo
 
-### Overall
-<img src="./DocumentAssets/overall.gif" alt="overall" width="150px" style="padding:4px"/>
+### Basic Browsing
+<img src="./DocumentAssets/basicBrowsing.gif" alt="overall" width="150px" style="padding:4px"/>
+
+### Chat With AI
+<img src="./DocumentAssets/chat.gif" alt="overall" width="150px" style="padding:4px"/>
 
 
 ### Individual Functionalities

@@ -15,11 +15,21 @@ struct BrowserByItsukiApp: App {
         WindowGroup {
             ContentView()
                 .environment(self.browserManager)
-                .onOpenURL(perform: { url in
-                    withAnimation {
-                        self.browserManager.openNewTab(url)
-                    }
-                })
+//                .onOpenURL(perform: { url in
+//                    withAnimation {
+//                        self.browserManager.openNewTab(url)
+//                    }
+//                })
+//                .onTapGesture {
+//                    withAnimation {
+//                        browserManager.showChatWindow = false
+//                    }
+//                }
+//                .overlay(alignment: .bottomTrailing, content: {
+//                    ChatContainerView()
+//                        .environment(browserManager)
+//                })
+//                .scrollDismissesKeyboard(.immediately)
         }
     }
 }
