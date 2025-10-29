@@ -25,6 +25,21 @@
 | Device Location      | Privacy - Location When In Use Usage Description (`NSLocationWhenInUseUsageDescription`)  |
 
 
+## License
+
+[License](./LICENSE)
+
+
+## Privacy Policy
+
+[Privacy Policy](./privacy.html)
+
+
+## Support
+
+If you need any help on the app, please open an issue or contact me at [itsuki.enjoy@gmail.com](itsuki.enjoy@gmail.com).
+
+
 ## Demo
 
 ### Basic Browsing
@@ -46,13 +61,3 @@
   <img src="./DocumentAssets/startPage.png" alt="bookmark" width="150px" style="padding:4px"/>
   <img src="./DocumentAssets/search.png" alt="bookmark" width="150px" style="padding:4px"/>
 </div>
-
-
-## License
-
-[License](./LICENSE)
-
-
-## Privacy Policy
-
-[Privacy Policy](./privacy.html)
