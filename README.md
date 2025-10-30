@@ -16,6 +16,10 @@
     - Browse histories
 
 
+## Download
+
+The app is available on [App Store](https://apps.apple.com/us/app/aibrowserbyitsuki/id6754548157).
+
 
 ## Permissions May Request
 
