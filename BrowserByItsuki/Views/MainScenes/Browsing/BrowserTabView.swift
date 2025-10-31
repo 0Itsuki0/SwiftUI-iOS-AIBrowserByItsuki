@@ -76,10 +76,16 @@ struct BrowserTabView: View {
             if let url = webPage.url {
                 self.browserManager.addNavigationHistory(url)
                 self.browserManager.openedTab?.currentUrl = url
+                if let tab = browserManager.openedTab {
+                    self.browserManager.updateSavedTab(tab)
+                }
             }
         })
         .onChange(of: webPage.title, initial: true, {
             self.browserManager.openedTab?.title = webPage.title
+            if let tab = browserManager.openedTab {
+                self.browserManager.updateSavedTab(tab)
+            }
         })
         .onChange(of: self.browserManager.openedTab?.currentUrl, {
             if self.browserManager.openedTab?.currentUrl != webPage.url {
