@@ -14,6 +14,9 @@
     - Add a page as Bookmark or Reading List
     - Share a page
     - Browse histories
+    
+- Additional
+    - Able to be set as the Default Browser App
 
 
 ## Download
@@ -51,6 +54,9 @@ If you need any help on the app, please open an issue or contact me at [itsuki.e
 
 ### Chat With AI
 <img src="./DocumentAssets/chat.gif" alt="overall" width="150px" style="padding:4px"/>
+
+### Default Browser Support
+<img src="./DocumentAssets/defaultBrowser.png" alt="overall" width="150px" style="padding:4px"/>
 
 
 ### Individual Functionalities
